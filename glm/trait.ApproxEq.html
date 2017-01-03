@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ApproxEq` trait in crate `glm`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ApproxEq">
+
+    <title>glm::ApproxEq - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>glm</a></p><script>window.sidebarCurrent = {name: 'ApproxEq', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content trait">
+<h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>glm</a>::<wbr><a class='trait' href=''>ApproxEq</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-37' class='srclink' href='../src/glm/src/basenum.rs.html#101-142' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait ApproxEq {
+    type <a href='#associatedtype.BaseType' class='type'>BaseType</a>: <a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>;
+    fn <a href='#tymethod.is_close_to' class='fnname'>is_close_to</a>(&amp;self, rhs: &amp;Self, max_diff: Self::BaseType) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>;
+
+    fn <a href='#method.is_approx_eq' class='fnname'>is_approx_eq</a>(&amp;self, rhs: &amp;Self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a> { ... }
+}</pre><div class='docblock'><p>Trait for comparing types that are derived from float numbers.</p>
+
+<h1 id='note' class='section-header'><a href='#note'>Note</a></h1>
+<p>Comparing float numbers is tricky. This trait is mainly for convenience.
+See <a href="https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/">this article</a>
+for the details of comparing float numbers.</p>
+</div>
+            <h2 id='associated-types'>Associated Types</h2>
+            <div class='methods'>
+        <h3 id='associatedtype.BaseType' class='method stab '><span id='BaseType.t' class='invisible'><code>type <a href='#associatedtype.BaseType' class='type'>BaseType</a>: <a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a></code></span></h3></div>
+            <h2 id='required-methods'>Required Methods</h2>
+            <div class='methods'>
+        <h3 id='tymethod.is_close_to' class='method stab '><span id='is_close_to.v' class='invisible'><code>fn <a href='#tymethod.is_close_to' class='fnname'>is_close_to</a>(&amp;self, rhs: &amp;Self, max_diff: Self::BaseType) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h3><div class='docblock'><p>Returns <code>true</code> if the difference between <code>x</code> and <code>y</code> is less than
+<code>max_diff</code>.</p>
+
+<h1 id='note-1' class='section-header'><a href='#note-1'>Note</a></h1>
+<p>The meanings of &quot;difference&quot; and &quot;less than&quot; are up to the
+implementations.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<p>use glm::*;</p>
+
+<p>let v1 = vec2(1000., 2000.);
+let v2 = vec2(1010., 1080.);
+assert!(v1.is_close_to(&amp;v2, 50.));
+assert!(!v1.is_close_to(&amp;v2, 10.));</p>
+</div></div>
+            <h2 id='provided-methods'>Provided Methods</h2>
+            <div class='methods'>
+        <h3 id='method.is_approx_eq' class='method stab '><span id='is_approx_eq.v' class='invisible'><code>fn <a href='#method.is_approx_eq' class='fnname'>is_approx_eq</a>(&amp;self, rhs: &amp;Self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h3><div class='docblock'><p>Returns <code>true</code> if the difference between <code>x</code> and <code>y</code> is less than
+<a href="http://en.wikipedia.org/wiki/Machine_epsilon">machine epsilon</a>.</p>
+
+<h1 id='example-1' class='section-header'><a href='#example-1'>Example</a></h1>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>use</span> <span class='ident'>glm</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>f</span> <span class='op'>=</span> <span class='number'>0.1_f32</span>;
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>sum</span> <span class='op'>=</span> <span class='number'>0f32</span>;
+<span class='kw'>for</span> <span class='ident'>i</span> <span class='kw'>in</span> <span class='number'>0</span>..<span class='number'>10</span> {
+    <span class='ident'>sum</span> <span class='op'>+=</span> <span class='ident'>f</span>;
+}
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='number'>1.0_f32</span> <span class='op'>==</span> <span class='ident'>sum</span>, <span class='bool-val'>false</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='number'>1f32</span>.<span class='ident'>is_approx_eq</span>(<span class='kw-2'>&amp;</span><span class='ident'>sum</span>), <span class='bool-val'>true</span>);</pre>
+</div></div>
+        <h2 id='implementors'>Implementors</h2>
+        <ul class='item-list' id='implementors-list'>
+    <li><code>impl ApproxEq for <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a></code></li>
+<li><code>impl ApproxEq for <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a></code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Vector2.html' title='glm::Vector2'>Vector2</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Vector3.html' title='glm::Vector3'>Vector3</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix2.html' title='glm::Matrix2'>Matrix2</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix3x2.html' title='glm::Matrix3x2'>Matrix3x2</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix4x2.html' title='glm::Matrix4x2'>Matrix4x2</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix2x3.html' title='glm::Matrix2x3'>Matrix2x3</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix3.html' title='glm::Matrix3'>Matrix3</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix4x3.html' title='glm::Matrix4x3'>Matrix4x3</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix3x4.html' title='glm::Matrix3x4'>Matrix3x4</a>&lt;T&gt;</code></li>
+<li><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; ApproxEq for <a class='struct' href='../glm/struct.Matrix4.html' title='glm::Matrix4'>Matrix4</a>&lt;T&gt;</code></li>
+</ul><script type="text/javascript" async
+                         src="../implementors/glm/trait.ApproxEq.js">
+                 </script></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "glm";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

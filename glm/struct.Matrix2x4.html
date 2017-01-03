@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Matrix2x4` struct in crate `glm`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Matrix2x4">
+
+    <title>glm::Matrix2x4 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>glm</a></p><script>window.sidebarCurrent = {name: 'Matrix2x4', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>glm</a>::<wbr><a class='struct' href=''>Matrix2x4</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3041' class='srclink' href='../src/glm/src/mat/mat.rs.html#199-201' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Matrix2x4&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; {
+    pub c0: <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;,
+    pub c1: <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;,
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.c0' class='structfield'>
+                           <span id='c0.v' class='invisible'>
+                           <code>c0: <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code>
+                           </span></span><span class='stab '></span><span id='structfield.c1' class='structfield'>
+                           <span id='c1.v' class='invisible'>
+                           <code>c1: <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code>
+                           </span></span><span class='stab '></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4184' class='srclink' href='../src/glm/src/mat/mat.rs.html#231-304' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(c0: <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;, c1: <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.from_array' class='method'><span id='from_array.v' class='invisible'><code>fn <a href='#method.from_array' class='fnname'>from_array</a>(ary: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>[</a><a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>; 2]</a>) -&gt; &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.from_array_mut' class='method'><span id='from_array_mut.v' class='invisible'><code>fn <a href='#method.from_array_mut' class='fnname'>from_array_mut</a>(ary: &amp;mut <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>[</a><a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>; 2]</a>) -&gt; &amp;mut <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.as_array' class='method'><span id='as_array.v' class='invisible'><code>fn <a href='#method.as_array' class='fnname'>as_array</a>(&amp;self) -&gt; &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>[</a><a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>; 2]</a></code></span></h4>
+<h4 id='method.as_array_mut' class='method'><span id='as_array_mut.v' class='invisible'><code>fn <a href='#method.as_array_mut' class='fnname'>as_array_mut</a>(&amp;mut self) -&gt; &amp;mut <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>[</a><a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>; 2]</a></code></span></h4>
+<h4 id='method.add_s' class='method'><span id='add_s.v' class='invisible'><code>fn <a href='#method.add_s' class='fnname'>add_s</a>(&amp;self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.add_m' class='method'><span id='add_m.v' class='invisible'><code>fn <a href='#method.add_m' class='fnname'>add_m</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.sub_s' class='method'><span id='sub_s.v' class='invisible'><code>fn <a href='#method.sub_s' class='fnname'>sub_s</a>(&amp;self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.sub_m' class='method'><span id='sub_m.v' class='invisible'><code>fn <a href='#method.sub_m' class='fnname'>sub_m</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.div_m' class='method'><span id='div_m.v' class='invisible'><code>fn <a href='#method.div_m' class='fnname'>div_m</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.div_s' class='method'><span id='div_s.v' class='invisible'><code>fn <a href='#method.div_s' class='fnname'>div_s</a>(&amp;self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.rem_m' class='method'><span id='rem_m.v' class='invisible'><code>fn <a href='#method.rem_m' class='fnname'>rem_m</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.rem_s' class='method'><span id='rem_s.v' class='invisible'><code>fn <a href='#method.rem_s' class='fnname'>rem_s</a>(&amp;self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.mul_s' class='method'><span id='mul_s.v' class='invisible'><code>fn <a href='#method.mul_s' class='fnname'>mul_s</a>(&amp;self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.mul_v' class='method'><span id='mul_v.v' class='invisible'><code>fn <a href='#method.mul_v' class='fnname'>mul_v</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Vector2.html' title='glm::Vector2'>Vector2</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.mul_m' class='method'><span id='mul_m.v' class='invisible'><code>fn <a href='#method.mul_m' class='fnname'>mul_m</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix4x2.html' title='glm::Matrix4x2'>Matrix4x2</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix4.html' title='glm::Matrix4'>Matrix4</a>&lt;T&gt;</code></span></h4>
+<h4 id='method.neg_m' class='method'><span id='neg_m.v' class='invisible'><code>fn <a href='#method.neg_m' class='fnname'>neg_m</a>(&amp;self) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> + <a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3045' class='srclink' href='../src/glm/src/mat/mat.rs.html#198' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> + <a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3047' class='srclink' href='../src/glm/src/mat/mat.rs.html#198' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> + <a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3053' class='srclink' href='../src/glm/src/mat/mat.rs.html#198' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> + <a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3069' class='srclink' href='../src/glm/src/mat/mat.rs.html#198' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Index.html' title='core::ops::Index'>Index</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4242' class='srclink' href='../src/glm/src/mat/mat.rs.html#305-311' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output' class='type'><span id='Output.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Index.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The returned type after indexing</p>
+</div><h4 id='method.index' class='method'><span id='index.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Index.html#tymethod.index' class='fnname'>index</a>&lt;'a&gt;(&amp;'a self, i: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; &amp;'a <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the indexing (<code>container[index]</code>) operation</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.IndexMut.html' title='core::ops::IndexMut'>IndexMut</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4249' class='srclink' href='../src/glm/src/mat/mat.rs.html#312-317' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.index_mut' class='method'><span id='index_mut.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.IndexMut.html#tymethod.index_mut' class='fnname'>index_mut</a>&lt;'a&gt;(&amp;'a mut self, i: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; &amp;'a mut <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the mutable indexing (<code>container[index]</code>) operation</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='../rand/trait.Rand.html' title='rand::Rand'>Rand</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4255' class='srclink' href='../src/glm/src/mat/mat.rs.html#318-323' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.rand' class='method'><span id='rand.v' class='invisible'><code>fn <a href='../rand/trait.Rand.html#tymethod.rand' class='fnname'>rand</a>&lt;R:&nbsp;<a class='trait' href='../rand/trait.Rng.html' title='rand::Rng'>Rng</a>&gt;(rng: &amp;mut R) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Generates a random instance of this type using the specified source of randomness. <a href="../rand/trait.Rand.html#tymethod.rand">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html' title='core::ops::Add'>Add</a>&lt;T&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4260' class='srclink' href='../src/glm/src/mat/mat.rs.html#332-338' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-1' class='type'><span id='Output.t-1' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>+</code> operator</p>
+</div><h4 id='method.add' class='method'><span id='add.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html#tymethod.add' class='fnname'>add</a>(self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>+</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='../glm/trait.ApproxEq.html' title='glm::ApproxEq'>ApproxEq</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4266' class='srclink' href='../src/glm/src/mat/mat.rs.html#339-345' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.BaseType' class='type'><span id='BaseType.t' class='invisible'><code>type <a href='../glm/trait.ApproxEq.html#associatedtype.BaseType' class='type'>BaseType</a> = T</code></span></h4>
+<h4 id='method.is_close_to' class='method'><span id='is_close_to.v' class='invisible'><code>fn <a href='../glm/trait.ApproxEq.html#tymethod.is_close_to' class='fnname'>is_close_to</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;, max_diff: T) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns <code>true</code> if the difference between <code>x</code> and <code>y</code> is less than <code>max_diff</code>. <a href="../glm/trait.ApproxEq.html#tymethod.is_close_to">Read more</a></p>
+</div><h4 id='method.is_approx_eq' class='method'><span id='is_approx_eq.v' class='invisible'><code>fn <a href='../glm/trait.ApproxEq.html#method.is_approx_eq' class='fnname'>is_approx_eq</a>(&amp;self, rhs: &amp;Self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns <code>true</code> if the difference between <code>x</code> and <code>y</code> is less than machine epsilon. <a href="../glm/trait.ApproxEq.html#method.is_approx_eq">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html' title='core::ops::Add'>Add</a>&lt;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4273' class='srclink' href='../src/glm/src/mat/mat.rs.html#346-352' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-2' class='type'><span id='Output.t-2' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>+</code> operator</p>
+</div><h4 id='method.add-1' class='method'><span id='add.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Add.html#tymethod.add' class='fnname'>add</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>+</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html' title='core::ops::Sub'>Sub</a>&lt;T&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4279' class='srclink' href='../src/glm/src/mat/mat.rs.html#353-359' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-3' class='type'><span id='Output.t-3' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>-</code> operator</p>
+</div><h4 id='method.sub' class='method'><span id='sub.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html#tymethod.sub' class='fnname'>sub</a>(self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>-</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html' title='core::ops::Sub'>Sub</a>&lt;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4285' class='srclink' href='../src/glm/src/mat/mat.rs.html#360-366' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-4' class='type'><span id='Output.t-4' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>-</code> operator</p>
+</div><h4 id='method.sub-1' class='method'><span id='sub.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Sub.html#tymethod.sub' class='fnname'>sub</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>-</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html' title='core::ops::Div'>Div</a>&lt;T&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4291' class='srclink' href='../src/glm/src/mat/mat.rs.html#367-373' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-5' class='type'><span id='Output.t-5' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>/</code> operator</p>
+</div><h4 id='method.div' class='method'><span id='div.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html#tymethod.div' class='fnname'>div</a>(self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>/</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html' title='core::ops::Div'>Div</a>&lt;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4297' class='srclink' href='../src/glm/src/mat/mat.rs.html#374-380' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-6' class='type'><span id='Output.t-6' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>/</code> operator</p>
+</div><h4 id='method.div-1' class='method'><span id='div.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Div.html#tymethod.div' class='fnname'>div</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>/</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html' title='core::ops::Rem'>Rem</a>&lt;T&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4303' class='srclink' href='../src/glm/src/mat/mat.rs.html#381-387' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-7' class='type'><span id='Output.t-7' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>%</code> operator</p>
+</div><h4 id='method.rem' class='method'><span id='rem.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html#tymethod.rem' class='fnname'>rem</a>(self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>%</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html' title='core::ops::Rem'>Rem</a>&lt;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4309' class='srclink' href='../src/glm/src/mat/mat.rs.html#388-394' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-8' class='type'><span id='Output.t-8' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>%</code> operator</p>
+</div><h4 id='method.rem-1' class='method'><span id='rem.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Rem.html#tymethod.rem' class='fnname'>rem</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>%</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Neg.html' title='core::ops::Neg'>Neg</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4315' class='srclink' href='../src/glm/src/mat/mat.rs.html#395-401' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-9' class='type'><span id='Output.t-9' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Neg.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>-</code> operator</p>
+</div><h4 id='method.neg' class='method'><span id='neg.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Neg.html#tymethod.neg' class='fnname'>neg</a>(self) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the unary <code>-</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html' title='core::ops::Mul'>Mul</a>&lt;T&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4320' class='srclink' href='../src/glm/src/mat/mat.rs.html#402-408' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-10' class='type'><span id='Output.t-10' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>*</code> operator</p>
+</div><h4 id='method.mul' class='method'><span id='mul.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#tymethod.mul' class='fnname'>mul</a>(self, rhs: T) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>*</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html' title='core::ops::Mul'>Mul</a>&lt;<a class='struct' href='../glm/struct.Vector2.html' title='glm::Vector2'>Vector2</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4326' class='srclink' href='../src/glm/src/mat/mat.rs.html#409-415' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-11' class='type'><span id='Output.t-11' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>*</code> operator</p>
+</div><h4 id='method.mul-1' class='method'><span id='mul.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#tymethod.mul' class='fnname'>mul</a>(self, rhs: <a class='struct' href='../glm/struct.Vector2.html' title='glm::Vector2'>Vector2</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>*</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html' title='core::ops::Mul'>Mul</a>&lt;<a class='struct' href='../glm/struct.Matrix4x2.html' title='glm::Matrix4x2'>Matrix4x2</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4332' class='srclink' href='../src/glm/src/mat/mat.rs.html#416-422' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-12' class='type'><span id='Output.t-12' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix4.html' title='glm::Matrix4'>Matrix4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>*</code> operator</p>
+</div><h4 id='method.mul-2' class='method'><span id='mul.v-2' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#tymethod.mul' class='fnname'>mul</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix4x2.html' title='glm::Matrix4x2'>Matrix4x2</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix4.html' title='glm::Matrix4'>Matrix4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>*</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='../num_traits/identities/trait.Zero.html' title='num_traits::identities::Zero'>Zero</a> for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4338' class='srclink' href='../src/glm/src/mat/mat.rs.html#423-432' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.zero' class='method'><span id='zero.v' class='invisible'><code>fn <a href='../num_traits/identities/trait.Zero.html#tymethod.zero' class='fnname'>zero</a>() -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Returns the additive identity element of <code>Self</code>, <code>0</code>. <a href="../num_traits/identities/trait.Zero.html#tymethod.zero">Read more</a></p>
+</div><h4 id='method.is_zero' class='method'><span id='is_zero.v' class='invisible'><code>fn <a href='../num_traits/identities/trait.Zero.html#tymethod.is_zero' class='fnname'>is_zero</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns <code>true</code> if <code>self</code> is equal to the additive identity.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='../glm/trait.GenMat.html' title='glm::GenMat'>GenMat</a>&lt;T, <a class='struct' href='../glm/struct.Vector4.html' title='glm::Vector4'>Vector4</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4343' class='srclink' href='../src/glm/src/mat/mat.rs.html#433-444' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.R' class='type'><span id='R.t' class='invisible'><code>type <a href='../glm/trait.GenMat.html#associatedtype.R' class='type'>R</a> = <a class='struct' href='../glm/struct.Vector2.html' title='glm::Vector2'>Vector2</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Type of row vectors.</p>
+</div><h4 id='associatedtype.Transpose' class='type'><span id='Transpose.t' class='invisible'><code>type <a href='../glm/trait.GenMat.html#associatedtype.Transpose' class='type'>Transpose</a> = <a class='struct' href='../glm/struct.Matrix4x2.html' title='glm::Matrix4x2'>Matrix4x2</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Type of transpose matrix.</p>
+</div><h4 id='method.transpose' class='method'><span id='transpose.v' class='invisible'><code>fn <a href='../glm/trait.GenMat.html#tymethod.transpose' class='fnname'>transpose</a>(&amp;self) -&gt; <a class='struct' href='../glm/struct.Matrix4x2.html' title='glm::Matrix4x2'>Matrix4x2</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Returns the transpose matrix. <a href="../glm/trait.GenMat.html#tymethod.transpose">Read more</a></p>
+</div><h4 id='method.mul_c' class='method'><span id='mul_c.v' class='invisible'><code>fn <a href='../glm/trait.GenMat.html#tymethod.mul_c' class='fnname'>mul_c</a>(&amp;self, rhs: &amp;<a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>Component-wise multiplication. <a href="../glm/trait.GenMat.html#tymethod.mul_c">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html' title='core::ops::Mul'>Mul</a>&lt;<a class='struct' href='../glm/struct.Matrix2.html' title='glm::Matrix2'>Matrix2</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4697' class='srclink' href='../src/glm/src/mat/mat.rs.html#468-476' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-13' class='type'><span id='Output.t-13' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>*</code> operator</p>
+</div><h4 id='method.mul-3' class='method'><span id='mul.v-3' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#tymethod.mul' class='fnname'>mul</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix2.html' title='glm::Matrix2'>Matrix2</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>*</code> operator</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl&lt;T:&nbsp;<a class='trait' href='../glm/trait.BaseFloat.html' title='glm::BaseFloat'>BaseFloat</a>&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html' title='core::ops::Mul'>Mul</a>&lt;<a class='struct' href='../glm/struct.Matrix3x2.html' title='glm::Matrix3x2'>Matrix3x2</a>&lt;T&gt;&gt; for <a class='struct' href='../glm/struct.Matrix2x4.html' title='glm::Matrix2x4'>Matrix2x4</a>&lt;T&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4709' class='srclink' href='../src/glm/src/mat/mat.rs.html#468-476' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Output-14' class='type'><span id='Output.t-14' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#associatedtype.Output' class='type'>Output</a> = <a class='struct' href='../glm/struct.Matrix3x4.html' title='glm::Matrix3x4'>Matrix3x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The resulting type after applying the <code>*</code> operator</p>
+</div><h4 id='method.mul-4' class='method'><span id='mul.v-4' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Mul.html#tymethod.mul' class='fnname'>mul</a>(self, rhs: <a class='struct' href='../glm/struct.Matrix3x2.html' title='glm::Matrix3x2'>Matrix3x2</a>&lt;T&gt;) -&gt; <a class='struct' href='../glm/struct.Matrix3x4.html' title='glm::Matrix3x4'>Matrix3x4</a>&lt;T&gt;</code></span></h4>
+<div class='docblock'><p>The method for the <code>*</code> operator</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "glm";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
