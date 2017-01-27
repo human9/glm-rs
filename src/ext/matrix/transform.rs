@@ -87,6 +87,40 @@ where
     )
 }
 
+/// Creates a right-handed orthographic projection matrix.
+///
+/// `left`, `right`, `top`, and `bottom` are distances from the origin to the frustum edge.
+/// `z_near` and `z_far` are the position of the z axis clipping planes.
+#[inline]
+pub fn ortho<T>(
+    left: T,
+    right: T,
+    bottom: T,
+    top: T,
+    z_near: T,
+    z_far: T
+) -> Matrix4<T>
+where
+    T : BaseFloat
+{
+    let zero = num::zero::<T>();
+    let one = num::one::<T>();
+    let two = one + one;
+    let a = two / (right - left);
+    let b = two / (top - bottom);
+    let c = -two / (z_far - z_near);
+    let r = -(right + left) / (right - left);
+    let s = -(top + bottom) / (top - bottom);
+    let t = -(z_far + z_near) / (z_far - z_near);
+
+    Matrix4::new(
+        Vector4::new(   a, zero, zero, zero),
+        Vector4::new(zero,    b, zero, zero),
+        Vector4::new(zero, zero,    c, zero),
+        Vector4::new(   r,    s,    t,  one)
+    )
+}
+
 /// Builds a rotation 4 * 4 matrix created from an axis vector and an angle.
 ///
 /// `m` as the input matrix multiplied by this rotation matrix.
